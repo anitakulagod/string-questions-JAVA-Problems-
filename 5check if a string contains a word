@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a sentence: ");
+        String sentence = sc.nextLine();
+        System.out.print("Enter a word to check: ");
+        String word = sc.nextLine();
+        if (sentence.toLowerCase().contains(word.toLowerCase()))
+            System.out.println("The string contains the word \"" + word + "\".");
+        else
+            System.out.println("The string does not contain the word \"" + word + "\".");
+        sc.close();
+    }
+}
